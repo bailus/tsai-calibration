@@ -1,0 +1,8 @@
+
+{
+"images": [ "3D_L0933_square.JPG", "3D_R0548_square.JPG" ],
+"resolution": [ 3000, 3000 ],
+"pixelSize": [ 1.096e-3, 1.096e-3 ],
+"points": "points.csv",
+"label": "7MP, 233mm"
+}
