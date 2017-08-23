@@ -5,7 +5,7 @@
 
 An implementation of [Tsai's](https://en.wikipedia.org/wiki/Camera\_resectioning#Tsai.27s\_Algorithm) [camera calibration](https://en.wikipedia.org/wiki/Camera_resectioning) technique.
 
-![Left Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-0.png) ![Right Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-0.png)
+![Left Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-0.png) ![Right Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-1.png) ![Top-down View](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-2.png)
 
 Camera calibration is the process of estimating the parameters of a camera model order to create a model that approximates a physical camera.
 In this implementation we use a modified [pinhole camera model](https://en.wikipedia.org/wiki/Pinhole_camera_model) with corrections applied to account for [radial lens distortion](https://en.wikipedia.org/wiki/Distortion_(optics)#Radial_distortion).
