@@ -25,7 +25,7 @@ The resulting algorithm is much faster than the traditional methods used in phot
 
 ## Command Line
 ~~~~
-python main.py > output.txt
+python main.py > output/output.txt
 ~~~~
 
 

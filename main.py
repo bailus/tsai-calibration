@@ -113,7 +113,7 @@ def main():
         'numHighDistortionPoints': 8,
         'passes': 8,
         'folders': [ 'data/3d/shoot1' ],
-        'outputFilename': 'output.pdf'
+        'outputFilename': 'output/output.pdf'
     }
     openFolders(settings)
 
