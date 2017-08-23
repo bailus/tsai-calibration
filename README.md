@@ -5,11 +5,24 @@
 
 An implementation of [Tsai's](https://en.wikipedia.org/wiki/Camera\_resectioning#Tsai.27s\_Algorithm) [camera calibration](https://en.wikipedia.org/wiki/Camera_resectioning) technique.
 
-![Left Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-0.png) ![Right Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-0.png)
-
 Camera calibration is the process of estimating the parameters of a camera model order to create a model that approximates a physical camera.
 In this implementation we use a modified [pinhole camera model](https://en.wikipedia.org/wiki/Pinhole_camera_model) with corrections applied to account for [radial lens distortion](https://en.wikipedia.org/wiki/Distortion_(optics)#Radial_distortion).
-Photographs of an object with known geometry (a calibration object) are used to estimate the parameters using optimization techniques.
+
+
+## Example
+![Left Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-0.png) ![Right Camera](https://bytebucket.org/bailus/tsai-calibration/raw/master/output/output-0.png)
+
+|                                       |    Left |   Right |  Stereo  | Reference |
+|---------------------------------------|---------|---------|----------|-----------|
+| Focal Length (mm)                     |    1.89 |    1.93 |          |         3 |
+| First-order radial distortion (mm^-2) |  -0.244 |  -0.240 |          |           |
+| Baseline (mm)                         |         |         |    32.50 |        33 |
+| Camera-cube distance (mm)             |         |         |    251.0 |       233 |
+
+
+
+## Camera Calibration
+In classic camera calibration, photographs of an object with known geometry (a calibration object) are used to estimate the parameters using optimization techniques.
 
 The most popular method for low-cost camera calibration is Zhang's technique\[2\] - which uses several photographs to calibrate the camera. This can be problematic in some applications (for example, when battery life is limited).
 In contrast, Tsai's technique\[1\] uses a single photograph. A downside to this approach is that the points used in Tsai calibration cannot lie on the same plane, so the calibration object must be more complex than the simple checkerboards typically used in Zhang calibration.
