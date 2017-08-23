@@ -12,14 +12,14 @@ Photographs of an object with known geometry (a calibration object) are used to 
 The most popular method for low-cost camera calibration is Zhang's technique\[2\] - which uses several photographs to calibrate the camera. This can be problematic in some applications (for example, when battery life is limited).
 In contrast, Tsai's technique\[1\] uses a single photograph. A downside to this approach is that the points used in Tsai calibration cannot lie on the same plane, so the calibration object must be more complex than the simple checkerboards typically used in Zhang calibration.
 
-To estimate the parameters of the model, a 2-stage process is used. First, the parameters of a linear pinhole camera model are estimated using a linear optimisation process (least-squares or SVD).
-In the second stage, the model is extended to estimate the nonlinear lens distortion parameters. Parameters for the resulting model can then be found using a nonlinear optimisation process (gradient descent).
+To estimate the parameters of the model, a 2-stage process is used. First, the parameters of a linear pinhole camera model are estimated using a linear optimisation process ([Singular Value Decomposition](https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.svd.html)).
+In the second stage, the model is extended to estimate the nonlinear lens distortion parameters. Parameters for the resulting model can then be found using a nonlinear optimisation process ([gradient descent](https://en.wikipedia.org/wiki/Gradient_descent)).
 The resulting algorithm is much faster than the traditional methods used in photogrammetry that simultaneously optimize all the parameters using nonlinear methods.
 
 
 ## Requires
  * [Python 2.x](https://www.python.org/)
-   * [SciPy](https://www.scipy.org/) (Math library)
+   * [NumPy](http://www.numpy.org/) (Math library)
    * [Matplotlib](https://matplotlib.org/) (2D/3D plotting library)
 
 

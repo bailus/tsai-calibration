@@ -12,7 +12,6 @@
 from __future__ import print_function
 import numpy as np
 import scipy as sp
-from scipy import stats
 from transforms import *
 from calibration import calibrate
 
@@ -23,7 +22,7 @@ printVerbose = print if verbose else lambda *a, **k: None   # http://stackoverfl
 
 def error(points):
     numbers = map(lambda p: np.linalg.norm(np.subtract(p.pixel[:2], p.distortedPixel[:2])), points)
-    return sp.stats.describe(numbers)
+    return { 'mean': np.mean(numbers), 'median': np.median(numbers), 'min': np.amin(numbers), 'max': np.amax(numbers) }
 
 
 def estimateKappa(points):

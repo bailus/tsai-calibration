@@ -15,7 +15,6 @@ from pprint import pprint
 
 # and some math stuff
 import numpy as np
-import scipy as sp
 
 # and display some points
 import matplotlib
