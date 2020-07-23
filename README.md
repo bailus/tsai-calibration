@@ -3,9 +3,9 @@
 [Samuel Bailey](http://bailey.geek.nz) <[sam@bailey.geek.nz](mailto:sam@bailey.geek.nz)>
 
 
-An implementation of [Tsai's](https://en.wikipedia.org/wiki/Camera\_resectioning#Tsai.27s\_Algorithm) [camera calibration](https://en.wikipedia.org/wiki/Camera_resectioning) technique.
+An implementation of [Tsai's camera calibration algorithm](https://en.wikipedia.org/wiki/Camera\_resectioning#Tsai.27s\_Algorithm).
 
-Camera calibration is the process of estimating the parameters of a camera model order to create a model that approximates a physical camera.
+[Camera calibration](https://en.wikipedia.org/wiki/Camera_resectioning) is the process of estimating the parameters of a camera model order to create a model that approximates a physical camera.
 In this implementation we use a modified [pinhole camera model](https://en.wikipedia.org/wiki/Pinhole_camera_model) with corrections applied to account for [radial lens distortion](https://en.wikipedia.org/wiki/Distortion_(optics)#Radial_distortion).
 
 
